@@ -523,7 +523,7 @@ def upload_directly_to_s3(file, bucket_name, s3_key):
         # region_name='your-region',  # Uncomment and set your region if necessary
     )
     s3.upload_fileobj(
-        file, bucket_name, s3_key, ExtraArgs={"ContentType": file.content_type}
+        file, bucket_name, s3_key
     )
 
 
